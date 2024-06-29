@@ -7,7 +7,7 @@ const NewsBoard = ({ category }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true); // Set loading state to true on component mount or category change
+    setLoading(true);
 
     let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
       import.meta.env.VITE_API_KEY
@@ -17,7 +17,7 @@ const NewsBoard = ({ category }) => {
       .then((response) => response.json())
       .then((data) => {
         setArticles(data.articles);
-        setLoading(false); // Set loading state to false after data fetching is complete
+        setLoading(false);
       });
   }, [category]);
 

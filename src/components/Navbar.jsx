@@ -15,7 +15,6 @@ const Navbar = ({ setCategory }) => {
           />
         </a>
 
-        {/* Toggler Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -31,7 +30,6 @@ const Navbar = ({ setCategory }) => {
           ></span>
         </button>
 
-        {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             {[

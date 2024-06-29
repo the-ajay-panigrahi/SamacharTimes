@@ -49,10 +49,9 @@ body {
   display: block;
 }
 
-/* Example container styles */
 .spinner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px; /* Adjust as needed */
+  min-height: 200px;
 }
